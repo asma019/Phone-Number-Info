@@ -7,7 +7,7 @@ function validatePhoneNumber() {
     fetch(url, {
         method: "GET",
         headers: {
-            "X-RapidAPI-Key": "50720c53admsh5854d4e8b976e34p10fbabjsnb13f5467c1f2",  // Replace with your API key
+            "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,  // Replace with your API key
             "X-RapidAPI-Host": "phonenumbervalidatefree.p.rapidapi.com"
         }
     })
